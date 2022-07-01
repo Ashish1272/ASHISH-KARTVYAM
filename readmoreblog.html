@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Revolution Slider CSS -->
+    <link rel="stylesheet" href="assets/revolution/css/settings.css">
+    <link rel="stylesheet" href="assets/revolution/css/layers.css">
+    <link rel="stylesheet" href="assets/revolution/css/navigation.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Owl Magnific CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Image Light Box CSS -->
+    <link rel="stylesheet" href="assets/css/imagelightbox.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- Odometer CSS-->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Dark CSS -->
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/familypoorcrawsel.fundpage.css">
+    <link rel="stylesheet" href="./assets/fonts/Fascinate-Regular.ttf">
+    <title>KARTVYAM</title>
+
+
+
+    <link media="all" href="wp-content/cache/autoptimize/css/autoptimize_7ae36b5d23845d2c18c73ff7e7749b12.css" rel="stylesheet" />
+    <link media="screen" href="wp-content/cache/autoptimize/css/autoptimize_8e43d65e358c9983a83d6347aa138fb3.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #000000;
+            padding: 2px;
+        }
+        
+        rgb (101, 43, 43)rgb(43, 86, 101)rgb(7, 115, 154)rgb(7, 154, 83) .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Create a right-aligned (split) link inside the navigation bar */
+        
+        .topnav a.split {
+            float: right;
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        .topnav a {
+            float: right;
+            margin-right: 20px;
+        }
+    </style>
+    <style>
+        /* CSS reset */
+        
+        #as-main {
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+        }
+        /* Typography =======================*/
+        /* Headings */
+        /* Main heading for card's front cover */
+        
+        .card-front__heading {
+            font-size: 1.5rem;
+            margin-top: .25rem;
+        }
+        /* Main heading for inside page */
+        
+        .inside-page__heading {
+            padding-bottom: 1rem;
+            width: 100%;
+        }
+        /* Mixed */
+        /* For both inside page's main heading and 'view me' text on card front cover */
+        
+        .inside-page__heading,
+        .card-front__text-view {
+            font-size: 0.8rem;
+            font-weight: 800;
+            margin-top: .2rem;
+        }
+        
+        .inside-page__heading--city,
+        .card-front__text-view--city {
+            color: #ff62b2;
+        }
+        
+        .inside-page__heading--ski,
+        .card-front__text-view--ski {
+            color: #2aaac1;
+        }
+        
+        .inside-page__heading--beach,
+        .card-front__text-view--beach {
+            color: #fa7f67;
+        }
+        
+        .inside-page__heading--camping,
+        .card-front__text-view--camping {
+            color: #00b97c;
+        }
+        /* Front cover */
+        
+        .card-front__tp {
+            color: #fafbfa;
+        }
+        /* For pricing text on card front cover */
+        
+        .card-front__text-price {
+            font-size: 1.2rem;
+            margin-top: -.2rem;
+        }
+        /* Back cover */
+        /* For inside page's body text */
+        
+        .inside-page__text {
+            color: #333;
+            font-size: 0.95rem;
+        }
+        /* Icons ===========================================*/
+        
+        .card-front__icon {
+            fill: #fafbfa;
+            font-size: 3vw;
+            height: 3.25rem;
+            margin-top: -.5rem;
+            width: 3.25rem;
+        }
+        /* Buttons =================================================*/
+        
+        .inside-page__btn {
+            background-color: transparent;
+            border: 3px solid;
+            border-radius: .5rem;
+            font-size: .5rem;
+            font-weight: 500;
+            margin-top: 0rem;
+            overflow: hidden;
+            /* padding: .7rem .75rem; */
+            position: relative;
+            text-decoration: none;
+            transition: all .3s ease;
+            width: 90%;
+            z-index: 10;
+        }
+        
+        .inside-page__btn::before {
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: scaleY(0);
+            transition: all .3s ease;
+            width: 100%;
+            z-index: -1;
+        }
+        
+        .inside-page__btn--city {
+            border-color: #ff40a1;
+            color: #ff40a1;
+        }
+        
+        .inside-page__btn--city::before {
+            background-color: #ff40a1;
+        }
+        
+        .inside-page__btn--ski {
+            border-color: #279eb2;
+            color: #279eb2;
+        }
+        
+        .inside-page__btn--ski::before {
+            background-color: #279eb2;
+        }
+        
+        .inside-page__btn--beach {
+            border-color: #fa7f67;
+            color: #fa7f67;
+        }
+        
+        .inside-page__btn--beach::before {
+            background-color: #fa7f67;
+        }
+        
+        .inside-page__btn--camping {
+            border-color: #00b97d;
+            color: #00b97d;
+        }
+        
+        .inside-page__btn--camping::before {
+            background-color: #00b97d;
+        }
+        
+        .inside-page__btn:hover {
+            color: #fafbfa;
+        }
+        
+        .inside-page__btn:hover::before {
+            transform: scaleY(1);
+        }
+        /* Layout Structure=========================================*/
+        
+        .main {
+            background: linear-gradient( to bottom right, #eee8dd, #e3d9c6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        /* Container to hold all cards in one place */
+        
+        .card-area {
+            align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+            height: 100%;
+            justify-content: space-evenly;
+            padding: 1rem;
+        }
+        /* Card ============================================*/
+        /* Area to hold an individual card */
+        
+        .card-section {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+        }
+        /* A container to hold the flip card and the inside page */
+        
+        .card {
+            background-color: rgba(0, 0, 0, .05);
+            box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+            height: 15rem;
+            position: relative;
+            transition: all 1s ease;
+            width: 15rem;
+        }
+        /* Flip card - covering both the front and inside front page */
+        /* An outer container to hold the flip card. This excludes the inside page */
+        
+        .flip-card {
+            height: 15rem;
+            perspective: 100rem;
+            position: absolute;
+            right: 0;
+            transition: all 1s ease;
+            visibility: hidden;
+            width: 15rem;
+            z-index: 100;
+        }
+        /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+        /* This is done so content in the inside page can be selected */
+        
+        .flip-card>* {
+            visibility: visible;
+        }
+        /* An inner container to hold the flip card. This excludes the inside page */
+        
+        .flip-card__container {
+            height: 100%;
+            position: absolute;
+            right: 0;
+            transform-origin: left;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            width: 100%;
+        }
+        
+        .card-front,
+        .card-back {
+            backface-visibility: hidden;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        /* Styling for the front side of the flip card */
+        /* container for the front side */
+        
+        .card-front {
+            background-color: #fafbfa;
+            height: 15rem;
+            width: 15rem;
+        }
+        /* Front side's top section */
+        
+        .card-front__tp {
+            align-items: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+            display: flex;
+            flex-direction: column;
+            height: 12rem;
+            justify-content: center;
+            padding: .75rem;
+        }
+        
+        .card-front__tp--city {
+            background: linear-gradient( to bottom, #ff73b9, #ff40a1);
+        }
+        
+        .card-front__tp--ski {
+            background: linear-gradient( to bottom, #47c2d7, #279eb2);
+        }
+        
+        .card-front__tp--beach {
+            background: linear-gradient( to bottom, #fb9b88, #f86647);
+        }
+        
+        .card-front__tp--camping {
+            background: linear-gradient( to bottom, #00db93, #00b97d);
+        }
+        /* Front card's bottom section */
+        
+        .card-front__bt {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        /* Styling for the back side of the flip card */
+        
+        .card-back {
+            background-color: #fafbfa;
+            transform: rotateY(180deg);
+        }
+        /* Specifically targeting the <video> element */
+        
+        .video__container {
+            clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+            height: auto;
+            min-height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+        /* Inside page */
+        
+        .inside-page {
+            background-color: #fafbfa;
+            box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+            height: 100%;
+            padding: 1rem;
+            position: absolute;
+            right: 0;
+            transition: all 1s ease;
+            width: 15rem;
+            z-index: 1;
+        }
+        
+        .inside-page__container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+        /* Functionality ====================================*/
+        /* This is to keep the card centered (within its container) when opened */
+        
+        .card:hover {
+            box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+            width: 30rem;
+        }
+        /* When the card is hovered, the flip card container will rotate */
+        
+        .card:hover .flip-card__container {
+            transform: rotateY(-180deg);
+        }
+        /* When the card is hovered, the shadow on the inside page will shrink to the left */
+        
+        .card:hover .inside-page {
+            box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+        }
+        /* Footer ====================================*/
+        
+        .footer {
+            background-color: #333;
+            margin-top: 3rem;
+            padding: 1rem 0;
+            width: 100%;
+        }
+        
+        .footer-text {
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .card-area {
+                display: inline-block;
+                margin-left: 70px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+
+<body oncontextmenu="return false" onmousedown="return false" onselectstart="return false">
+
+
+  
+    <!-- Start Navbar Area -->
+    <div class="navbar-area  navbar-style-three" style="border:1px solid white;">
+        <div class="topnav" style="overflow:hidden; ">
+
+
+            <div class="nav-search-wrapper" style="float:right; padding:0px;overflow:hidden;">
+                <input type="search" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </div>
+            <a href="" style="color:rgb(255, 255, 255);"><i class="fa fa-envelope" aria-hidden="true"
+                    style="color:white;"> </i> contact@kartavyamtrust.org</a> &nbsp; &nbsp;
+            <a href="" style="color:rgb(255, 255, 255);"> <i class="fa fa-address-book" aria-hidden="true" style="color:white;"> </i> &nbsp;+91-8750124124</a>
+
+        </div>
+        <div class="huruma-responsive-nav">
+            <div class="container">
+                <div class="huruma-responsive-menu">
+                    <div class="logo" style="margin-top: 20px; padding:20px;">
+                        <a href="index.html">
+                            <img src="./assets/LOGOAS/logoQUW.gif" class="white-logo" alt="logo">
+                            <img src="./assets/LOGOAS/logoQUW.gif" class="black-logo" alt="image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="huruma-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/LOGOAS/logoQUW.gif" class="white-logo" alt="logo">
+                        <img src="./assets/LOGOAS/logoQUW.gif" class="black-logo" alt="image">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">
+                                    About-us
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="history.html" class="nav-link">
+                                            History
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="vision.html" class="nav-link">
+                                            vision
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                            <!-- =----------------mediacenter -->
+                            <li class="nav-item">
+                                <a href="media.html" class="nav-link active">
+                                   Media center
+
+                                </a>
+
+                            </li>
+
+
+                            <!-- =------------------------------------ -->
+                            <li class="nav-item">
+                                <a href="kartvyam.html" class="nav-link">
+                                    Kartavyam?
+                                </a>
+
+                            </li>
+
+                            <!-- =------------------------------------ -->
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    What we do
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="SOCIALWALFAREWOMAN.html" class="nav-link">
+                                            social walfare woman children poverty
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="animal.html" class="nav-link">
+                                            animal walfare
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="nature.html" class="nav-link">
+                                            nature walfare
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            solidarity with pride
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <!-- virtual legal aid -->
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    virtual leagal aid
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href=" objective.html" class="nav-link">
+                                            objectives
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="function-activities.html" class="nav-link">
+                                            function &activities
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="legal-aid-clinic.html" class="nav-link">
+                                            legal aid clinic
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="rulebook.html" class="nav-link">
+                                            rule book
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="membersrule.html" class="nav-link">
+                                            members rule
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="whocan.html" class="nav-link">
+                                            who can avail?
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- virtual legal aid -->
+
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    publications
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="newskartvyam.html" class="nav-link">
+                                            news
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">
+                                            blog
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            research article
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            research report
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li> -->
+                            <!-- -============== -->
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Join-Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="join-us.html" class="nav-link">
+                                            Join-Now
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="membership.html" class="nav-link">
+                                            Membership Program
+                                        </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a href="financialreport.html" class="nav-link">
+                                            finacial Reports
+                                        </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a href="membership.html" class="nav-link">
+                                            corporate parnership
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <!-- virtual legal aid -->
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+
+    <div class="blog-article-main-wrapper">
+
+        <h1 class="article-title">“kartvyam news&#8221;</h1>
+        <span class="article-date">Published on <b>june 23, 2022</b></span>
+        <div class="article-categories-list">
+            <a href="" class="article-category-link">MemoryProject</a> </div>
+
+        <div class="sharethis-inline-share-buttons"></div><br/>
+
+        <div class="blog-article-main">
+            <!-- wp:image {"id":1459,"sizeSlug":"large"} -->
+            <figure class="wp-block-image size-large"><img decoding="async" alt="Jacob Kurian's Story" data-src="./assets/kr-images/d1q.jpg" class="wp-image-1459 lazyload" src="./assets/kr-images/d1q.jpg" /><noscript><img decoding="async" src="./assets/kr-images/d1q.jpg" alt="Jacob Kurian's Story" class="wp-image-1459"/></noscript></figure>
+            <!-- /wp:image -->
+
+            <!-- wp:paragraph -->
+            <p>Memory Contributor: Jacob Kurian, Former CEO, Titan Company Ltd. (with inputs from Regina Thomas)</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>In 2002, two young employees from Rolls Royce had this crazy idea of doing a Microlite flight from the Farnborough Air Show in England to India. Originally, Rolls Royce was to be the sponsor but since TATA had been toying with the idea of
+                aviation for a while and Rolls Royce was perhaps trying to establish a partnership, somehow the proposal landed in Titan and on my lap, and someone in the company thought we should sponsor it. From the time I lived in the US until I returned
+                to India, I had liked the idea of companies adopting good causes. In the USA, I would watch companies go the whole nine yards when it came to supporting causes – merchandise, CEOs flipping pancakes etc, however in India, it was a tedious
+                and dull CSR activity and usually, the most dispensable person would be given these projects.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Even though the TATAs have had a great track record of supporting charitable causes, in most TATA companies, the involvement of an average employee in such projects is low. They feel proud but they don’t do much or don’t find the opportunity.
+                At the time, there wasn’t even a mechanism to facilitate employees to get involved. So when the Microlite proposal landed through what I can only call serendipity, I was interested. I had a deep desire to try these things that could energize
+                people and get all of a company’s competencies and talent involved exactly like a business objective. Maybe we could use this to build some good deed equity and create awareness on a good cause in our own country.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>We decided to collaborate with an NGO that had credibility. We had all heard about CRY, the most credible institution in the area of child rights (till today). We reached out to them and began discussing the many things that we could do around
+                this project.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>We also reached out to our business vendors, collaborators, communication agencies, and even the graduates of the National Institute of Design, and were pleasantly surprised that anyone we reached out to agreed to work with us on the project
+                gratis. We were lucky to get Neville and Josy Paul to come on board to help us brand it and design all the interesting merchandise around it, like cut out planes, T-shirts etc. Within the company, instructions were clear that no one could
+                be given time off and we had to invest our spare time and do it. And again, as a pleasant surprise so many employees volunteered – including their spouses, friends, and partners.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>The flight plan was charted out to land and take off from several places because they could only fly some hours and needed to stop often. At every point that they landed, we and CRY together created a buzz of the event and CRY galvanized their
+                regional areas to bring children and parents to the event and watch the plane take off and land. Even the two pilots were very interesting people. They were funny, inclusive, and articulate. They even blogged about their travels in India.
+                It was the most successful and exciting event. I remember my daughter sitting on my shoulder and watching them fly.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>To mark an end of a remarkable journey in India (their flight was to take off from Mumbai and fly back to England), we also decided to organize celebratory dinners in three cities – Delhi, Bengaluru, and Mumbai. It all seems routine now, but
+                in those days, it was new. The idea was to sell tables to top corporate houses and the proceeds will be donated to CRY. The Taj Hotels agreed to organize the dinner and venue at cost and to make it worth everyone’s while, we also had some
+                entertainment, and celebrity hosts, a rather novel idea at the time. We had Jackie Shroff in Delhi and Raveena Tandon at Mumbai. We also reached out to some more top-notch performers of the country through the CRY network like Nrityagram,
+                Jagjit Singh, Usha Uthup, and Pandit Jasraj.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>For its time, the event raised a large amount of money. It was big money for CRY and we raised Rs. 75 lakh just in the south. We called it The Titan CRY Education Fund. We selected some of the CRY programs that we wanted to contribute to,
+                and a separate bank account was established only for the funds via this event.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Over the years, we had several small and a few big collaborations with CRY. The Tata Council of Community Initiatives was one. It was an attempt by TATA to galvanize their regional companies to collaborate with local causes and communities.
+                But for a while, this collective set of Tata companies had managed to donate only 8 sewing machines. When the time came to be serious, we called in CRY as advisors to our company and brainstorm on ideas. One of the things we narrowed down
+                to a problem we could help solve – a lack of public spaces for urban kids to play and learn.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>My daughter at the time used to go to Balbhavan for the train ride and was always thrilled about it. But there was nothing else much there. I used to think there was so much potential but it wasn’t being put to good use. We met a bureaucrat
+                who agreed to support us with that space. We planned the project in three phases but due to subsequent interference from the government, we managed to complete only one. The project successfully met the criteria – creating assets, the
+                involvement of NGOs etc, but unfortunately, it never went on to phase 2 and 3.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Logically, CRY may not have seemed like a perfect brand fit but we knew that they did good work, had good thoughts, and did good deeds. And I come from the school of thought that if companies think of more than commercial objectives and collaborate
+                with good causes, it earns them respect and equity that is otherwise almost impossible to earn. Doing good is also good for the brand. It certainly was for Titan and CRY.</p>
+            <!-- /wp:paragraph -->
+        </div>
+
+    </div>
+
+    <div class="related-posts-wrapper">
+        <div class="related-posts"><label>Related Posts</label>
+            <div>
+                <article class="blog-item blog-item-wide" style="border-bottom-color: #35cb43">
+                    <img decoding="async" alt="kartavyamtrust Blog" data-src="./assets/kr-images/IMG-20210220-WA0039.jpg" class="blog-item-img lazyload" src="./assets/kr-images/IMG-20210220-WA0039.jpg" /><noscript><img decoding="async" src="./assets/kr-images/IMG-20210220-WA0039.jpg" class="blog-item-img" alt="kartavyamtrust Blog"/></noscript>
+                    <div class="blog-item-info">
+                        <h3>Here’s Revathi’s Journey From A Small Village To Working For India’s Largest IT Company</h3>
+                        <p>“My dream has always been to get a good education and have my own voice” Growing up in a marginalised family did not stop Revathi to dream....</p>
+                        <a href="https://www.cry.org/blog/heres-revathis-journey-from-a-small-village-to-working-for-indias-largest-it-company/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="clear"></div>
+                </article>
+
+                <article class="blog-item blog-item-wide" style="border-bottom-color: #35cb43" onclick="window.location.href='https://www.cry.org/blog/meet-our-vaccinemitra-shahzada-who-helped-the-entire-village-get-vaccinated-in-kashmir/'">
+                    <img decoding="async" alt="kartavyamtrust Blog" data-src="./assets/kr-images/IMG-20210220-WA0039.jpg" class="blog-item-img lazyload" src="./assets/kr-images/IMG-20210220-WA0039.jpg" /><noscript><img decoding="async" src="./assets/kr-images/IMG-20210220-WA0039.jpg" class="blog-item-img" alt="kartavyamtrust Blog"/></noscript>
+                    <noscript><img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.cry.org/wp-content/uploads/meet-our-vaccinemitra-shahzada.jpg" class="blog-item-img" alt="CRY Blog"/></noscript>
+                    <div class="blog-item-info">
+                        <h3>Meet Our #VaccineMitra Shahzada, Who Helped the Entire Village Get Vaccinated in Kashmir!</h3>
+                        <p>With the ongoing pandemic, ensuring everyone gets both doses of vaccine is important to stay protected from the virus. However, in a country like....</p>
+                        <a href="https://www.cry.org/blog/meet-our-vaccinemitra-shahzada-who-helped-the-entire-village-get-vaccinated-in-kashmir/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="clear"></div>
+                </article>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <ul class="footer-social">
+            <li><a href="https:/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="httIA" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="htia" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="htt" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="hu" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <div class="footer-top-wrapper">
+            <ul class="footer-main">
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="newskartvyam.html">news</a></li>
+                <li><a href="/downloads/" target="blank">kartavyamtrust Protection Policy</a></li>
+                <li><a href="/get-involved">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom-wrapper">
+
+            <div class="footer-bottom-block">
+                <span class="footer-disclaimer">
+            <span>© 2022 kartavyamtrust All rights reserved.</span>
+                <a href="/-p/" target="_blank">Privacy Policy</a>
+                <a href="/terms-conditions/" target="_blank">Terms &amp; Conditions</a>
+                </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--    <img decoding="async"   alt="Crayon Strip" data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.cry.org/wp-content/themes/cry/images/crayon-strip-footer.png" class="crayon-strip-bottom lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.cry.org/wp-content/themes/cry/images/crayon-strip-footer.png" class="crayon-strip-bottom" alt="Crayon Strip"></noscript>-->
+    </footer>
+    <div class="bg-overlay"></div>
+
+    <!-- Start Go Top Section -->
+    <div class="go-top">
+        <i class="bx bx-chevron-up"></i>
+        <i class="bx bx-chevron-up"></i>
+    </div>
+    <!-- End Go Top Section -->
+
+    <!-- Jquery Slim JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Easing Min JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Owl Magnific JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Appear JS -->
+    <script src="assets/js/jquery.appear.js"></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Image Light Box JS -->
+    <script src="assets/js/imagelightbox.min.js"></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Slider Revolution core JavaScript files -->
+    <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="assets/js/rev-slider-custom.js"></script>
+
+    <script>
+        document.onkeydown = function(e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+    <script defer src="wp-content/cache/autoptimize/js/ourteam1.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Jquery Slim JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Easing Min JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Owl Magnific JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Appear JS -->
+    <script src="assets/js/jquery.appear.js"></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Image Light Box JS -->
+    <script src="assets/js/imagelightbox.min.js"></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+
+
+</body>
+
+</html>

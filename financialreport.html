@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Revolution Slider CSS -->
+    <link rel="stylesheet" href="assets/revolution/css/settings.css">
+    <link rel="stylesheet" href="assets/revolution/css/layers.css">
+    <link rel="stylesheet" href="assets/revolution/css/navigation.css">
+    <link media="all" href="wp-content/cache/autoptimize/css/autoptimize_7ae36b5d23845d2c18c73ff7e7749b12.css" rel="stylesheet" />
+    <link media="screen" href="wp-content/cache/autoptimize/css/autoptimize_8e43d65e358c9983a83d6347aa138fb3.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Owl Magnific CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Image Light Box CSS -->
+    <link rel="stylesheet" href="assets/css/imagelightbox.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- Odometer CSS-->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Dark CSS -->
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/familypoorcrawsel.fundpage.css">
+
+    <title>KARTVYAM</title>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #04AA6D;
+            padding: 2px;
+        }
+        
+        rgb (101, 43, 43)rgb(43, 86, 101)rgb(7, 115, 154)rgb(7, 154, 83) .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Create a right-aligned (split) link inside the navigation bar */
+        
+        .topnav a.split {
+            float: right;
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        .topnav a {
+            float: right;
+            margin-right: 20px;
+        }
+    </style>
+
+    <style>
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <style>
+        .zoom {
+            transition: transform .2s;
+            /* Animation */
+        }
+        
+        .zoom:hover {
+            transform: scale(1.1);
+            font-size: 17px;
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
+
+    <style>
+        @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+        @import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
+        h1 {
+            text-align: center;
+        }
+        
+        .as-1 {
+            --col-gap: 1rem;
+            --barH: 1rem;
+            --roleH: 1rem;
+            --flapH: 1rem;
+            width: min(90rem, 100%);
+            margin-inline: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--col-gap);
+            padding-inline: calc(var(--col-gap) / 2);
+            justify-content: center;
+            align-items: flex-start;
+            list-style: none;
+        }
+        
+        .as-1 li {
+            width: 10em;
+            display: grid;
+            grid-template: "role" "icon" "title" "descr";
+            align-items: flex-start;
+            gap: 1rem;
+            padding-block-end: calc(var(--flapH) + 1rem);
+            text-align: center;
+            background: var(--accent-color);
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6) var(--roleH), rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem), rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
+            clip-path: polygon( calc(var(--col-gap) / -2 - 5px) 0, calc(100% + var(--col-gap) / 2 + 5px) 0, calc(100% + var(--col-gap) / 2 + 5px) calc(100% - var(--flapH)), 50% 100%, calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
+        }
+        /* bar */
+        
+        .as-1 li::before {
+            content: "";
+            grid-area: role;
+            height: var(--barH);
+            width: calc(100% + var(--col-gap));
+            margin-left: calc(var(--col-gap) / -2);
+            margin-top: calc(var(--roleH) / 2 - var(--barH) / 2);
+            background: grey;
+            z-index: -1;
+            background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.4));
+        }
+        /* role */
+        
+        .as-1 li::after {
+            content: "";
+            grid-area: role;
+            background: var(--accent-color);
+            background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.4));
+            height: var(--roleH);
+        }
+        
+        .as-1 li .icon,
+        .as-1 li .title,
+        .as-1 li .descr {
+            padding-inline: 1rem;
+            color: white;
+            text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+        }
+        
+        .as-1 li .icon {
+            font-size: 3rem;
+        }
+        
+        .as-1 li .title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        
+        .as-1 li .descr {
+            font-size: 0.9rem;
+        }
+        
+        .credits {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+        }
+        
+        .credits a {
+            color: var(--color);
+        }
+    </style>
+    <style>
+        .banner {
+            width: 100%;
+            height: 320px;
+            background-image: url(./assets/Banner/rulebook.png);
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+    <style>
+        .whitebutton {
+            margin: 20px auto;
+            padding: 20px 0;
+            width: 200px;
+        }
+        
+        .whitebutton a {
+            background: #fff;
+            color: #666;
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 200px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .whitebutton a:before {
+            content: '\f019';
+            font-family: FontAwesome;
+            font-weight: normal;
+            padding: 5px;
+            margin-left: -12px;
+            margin-right: 6px;
+        }
+        
+        .whitebutton span {
+            background: #100;
+            color: #fff;
+            display: block;
+            font-size: 12px;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 200px;
+            z-index: 1;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .whitebutton .up {
+            background: #078c54;
+            margin: -25px auto;
+            opacity: 0;
+            border-radius: 0 0 5px 5px;
+            transform: translate(0, -50px);
+            transition: 350ms;
+        }
+        
+        .whitebutton .down {
+            margin: -30px auto;
+            opacity: 0;
+            border-radius: 5px 5px 0 0;
+            transform: translate(0, -50px);
+            transition: 350ms;
+        }
+        
+        .whitebutton .down:before {
+            content: '\f14a';
+            font-family: FontAwesome;
+            font-weight: normal;
+            margin-right: 6px;
+            color: #aaa;
+        }
+        
+        .whitebutton:hover .up {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        
+        .whitebutton:hover .down {
+            opacity: 1;
+            transform: translate(0, -90px);
+        }
+        
+        .whitebuttondemo {
+            margin: 20px auto;
+            padding: 20px 0;
+            width: 200px;
+        }
+        
+        .whitebuttondemo a {
+            background: #078c54;
+            color: #fff;
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 200px;
+            position: relative;
+            z-index: 2;
+            transition: 350ms;
+        }
+        
+        .whitebuttondemo a:before {
+            content: '\f004';
+            font-family: FontAwesome;
+            font-weight: normal;
+            padding: 8px;
+            margin-left: -12px;
+            margin-right: 6px;
+        }
+        
+        .whitebuttondemo a:hover {
+            color: #fff;
+        }
+        
+        .whitebuttondemo span {
+            color: rgba(0, 0, 0, 0.712);
+            display: block;
+            font-size: 12px;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 200px;
+            z-index: 1;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .whitebuttondemo .up {
+            margin: -25px auto;
+            opacity: 0;
+            border-radius: 0 0 10px 10px;
+            transform: translate(0, -50px);
+            transition: 350ms;
+        }
+        
+        .whitebuttondemo:hover .up {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area  navbar-style-three" style="border:1px solid white;">
+        <div class="topnav" style="overflow:hidden; ">
+
+
+            <div class="nav-search-wrapper" style="float:right; padding:0px;overflow:hidden;">
+                <input type="search" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </div>
+            <a href="" style="color:rgb(255, 255, 255);"><i class="fa fa-envelope" aria-hidden="true"
+                    style="color:white;"> </i> contact@kartavyamtrust.org</a> &nbsp; &nbsp;
+            <a href="" style="color:rgb(255, 255, 255);"> <i class="fa fa-address-book" aria-hidden="true" style="color:white;"> </i> &nbsp;+91-8750124124</a>
+
+        </div>
+        <div class="huruma-responsive-nav">
+            <div class="container">
+                <div class="huruma-responsive-menu">
+                    <div class="logo" style="margin-top: 20px; padding:20px;">
+                        <a href="index.html">
+                            <img src="./assets/LOGOAS/logoQUW.gif" class="white-logo" alt="logo">
+                            <img src="./assets/LOGOAS/logoQUW.gif" class="black-logo" alt="image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="huruma-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/LOGOAS/logoQUW.gif" class="white-logo" alt="logo">
+                        <img src="./assets/LOGOAS/logoQUW.gif" class="black-logo" alt="image">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">
+                                    About-us
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="history.html" class="nav-link">
+                                            History
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="vision.html" class="nav-link">
+                                            vision
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                            <!-- =----------------mediacenter -->
+                            <li class="nav-item">
+                                <a href="media.html" class="nav-link active">
+                                   Media center
+
+                                </a>
+
+                            </li>
+
+
+                            <!-- =------------------------------------ -->
+                            <li class="nav-item">
+                                <a href="kartvyam.html" class="nav-link">
+                                    Kartavyam?
+                                </a>
+
+                            </li>
+
+                            <!-- =------------------------------------ -->
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    What we do
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="SOCIALWALFAREWOMAN.html" class="nav-link">
+                                            social walfare woman children poverty
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="animal.html" class="nav-link">
+                                            animal walfare
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="nature.html" class="nav-link">
+                                            nature walfare
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            solidarity with pride
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <!-- virtual legal aid -->
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    virtual leagal aid
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href=" objective.html" class="nav-link">
+                                            objectives
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="function-activities.html" class="nav-link">
+                                            function &activities
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="legal-aid-clinic.html" class="nav-link">
+                                            legal aid clinic
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="rulebook.html" class="nav-link">
+                                            rule book
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="membersrule.html" class="nav-link">
+                                            members rule
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="whocan.html" class="nav-link">
+                                            who can avail?
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- virtual legal aid -->
+
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    publications
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="newskartvyam.html" class="nav-link">
+                                            news
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">
+                                            blog
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            research article
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            research report
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li> -->
+                            <!-- -============== -->
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Join-Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="join-us.html" class="nav-link">
+                                            Join-Now
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="membership.html" class="nav-link">
+                                            Membership Program
+                                        </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a href="financialreport.html" class="nav-link">
+                                            finacial Reports
+                                        </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a href="membership.html" class="nav-link">
+                                            corporate parnership
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <!-- virtual legal aid -->
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+
+
+
+    <div class="wp-container-1 wp-block-group">
+        <div class="wp-block-group__inner-container">
+            <div class="about-hero-wrapper">
+                <div class="about-hero-caption about-hero-caption-wide">
+                    <h1 class="hero-title">Our Financials</h1>
+                    <p>kartavyamtrust was the first Indian NGO to lay emphasis on establishing full accountability and complete transparency with the help of annual reports &#8211; even when it was not mandated by the law.</p>
+
+                </div>
+            </div>
+
+
+
+            <div class="how-we-do-list financials-stats-list" style="display:none">
+                <span class="small-cap-title">By The Numbers</span>
+                <div class="home-how-we-do-stat">
+                    <div class="home-how-we-do-num"><b>Rs.</b><em>1822</em><span>1822</span><b>L</b></div>
+                    <p>Invested towards Mobilisation</p>
+
+                </div>
+                <div class="home-how-we-do-stat">
+                    <div class="home-how-we-do-num"><b>Rs.</b><em>3367</em><span>3367</span><b>L</b></div>
+                    <p>Invested towards Deployments</p>
+
+                </div>
+                <div class="home-how-we-do-stat">
+                    <div class="home-how-we-do-num"><b>Rs.</b><em>883</em><span>883</span><b>L</b></div>
+                    <p>Invested towards Establishments</p>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+
+
+
+            <div id="AR1819" class="home-stories-wrapper financials-highlighted-report">
+                <div class="home-story-highlight-wrapper">
+                    <div class="home-story-highlight">
+                        <div class="home-story-img-wrapper">
+                            <img decoding="async" alt="kartavyamtrust " src="./assets/BLOGPIC/Together for children (1).png" class="lazyload" src="./assets/BLOGPIC/Together for children (1).png" /><noscript>
+                                <img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/uploads/annual-report-cover-2020-21.png" alt="kartavyamtrust "/></noscript><br/><img decoding="async"
+                                alt="kartavyamtrust Brush" data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/brush-patch.jpg" class="home-story-brush-patch lazyload"
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript>
+                                <img decoding="async" class="home-story-brush-patch" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/brush-patch.jpg" alt="kartavyamtrust Brush"/></noscript></div>
+                        <div class="home-story-description-wrapper">
+                            <div class="home-story-current-description">
+                                <h2 class="title-primary">Annual Report <em>2020-21</em></h2>
+                                <p>Everything we’ve achieved in 2020-21, would never have been possible without your support. Thank YOU for helping us create thousands of happy childhoods!</p>
+                                <p><a class="btn btn-primary" href="/downloads/annual-reports/" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download the report</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wp-container-2 wp-block-group">
+        <div class="wp-block-group__inner-container">
+            <div class='contact-faq-wrapper financials-download-wrapper'>
+
+
+
+                <div class="contact-faq-title-wrapper">
+                    <h2 class="title-primary title-underline">Other Reports</h2>
+                    <p>You can view our older annual reports as well as our FCRA reports and other certificates here.</p>
+                </div>
+
+
+
+                <div class="accordion-wrapper financials-accordion-wrapper">
+                    <div class="accordion-item">
+                        <div class="accordion-title">
+                            <h3>Annual Reports</h3>
+                            <div class="accordion-title-stats"><em>2014-21</em><em>7 Documents</em>
+
+                                <p class="wp-empty"><span class="wp-empty">&nbsp;</span></p>
+                            </div>
+                        </div>
+                        <div class="accordion-description">
+                            <ul>
+                                <li>Annual Report 2020-21 <a class="btn btn-text" href="/downloads/annual-reports/kartavyamtrust-Annual-Report-2020-21.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Annual Report 2019-20 <a class="btn btn-text" href="/downloads/annual-reports/kartavyamtrust-Annual-Report-2019-20.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Annual Report 2018-19 <a class="btn btn-text" href="/downloads/annual-reports/kartavyamtrust-annual-report-2018-2019.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Annual Report 2017-18 <a class="btn btn-text" href="/downloads/annual-reports/kartavyamtrust Annual report 2017-2018.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Annual Report 2016-17 <a class="btn btn-text" href="/downloads/annual-reports/annual-report-2016-17.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Annual Report 2015-16 <a class="btn btn-text" href="/downloads/annual-reports/kartavyamtrust_Annual_Report_2015-16_India.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Annual Report 2014-15 <a class="btn btn-text" href="/downloads/annual-reports/kartavyamtrust-India-Annual-Report-2014-15.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="FCRA_Reports" class="accordion-item">
+                        <div class="accordion-title">
+                            <h3>FCRA Reports</h3>
+                            <div class="accordion-title-stats"><em>2014-20</em><em>6 Documents</em>
+
+                                <p class="wp-empty"><span class="wp-empty">&nbsp;</span></p>
+                            </div>
+                        </div>
+                        <div class="accordion-description">
+                            <ul>
+                                <li>Audited FCRA Financials 2019-20 <a class="btn btn-text" href="/downloads/fcra-reports/2019-20.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Audited FCRA Financials 2018-19 <a class="btn btn-text" href="/downloads/fcra-reports/2018-19.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Audited FCRA Financials 2017-18 <a class="btn btn-text" href="/downloads/fcra-reports/2017-18.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Audited FCRA Financials 2016-17 <a class="btn btn-text" href="/downloads/fcra-reports/2016-2017.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Audited FCRA Financials 2015-16 <a class="btn btn-text" href="/downloads/fcra-reports/2015-16.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>Audited FCRA Financials 2014-15 <a class="btn btn-text" href="/downloads/fcra-reports/2014-15.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="certificates" class="accordion-item">
+                        <div class="accordion-title">
+                            <h3>Certificates</h3>
+                            <div class="accordion-title-stats"><em>2 Documents</em>
+
+                                <p class="wp-empty"><span class="wp-empty">&nbsp;</span></p>
+                            </div>
+                        </div>
+                        <div class="accordion-description">
+                            <ul>
+                                <li>80-G Certificate <a class="btn btn-text" href="/downloads/certificates/80-G-Certificate.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                                <li>12-A Certificate <a class="btn btn-text" href="/downloads/certificates/12-A-Certificate.pdf" target="_blank" rel="noopener noreferrer" download=""><i class="fa fa-download"></i>Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear">&nbsp;</div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <p><img decoding="async" alt="About Hero" src="./assets/Banner/delhipolice.png" class="about-hero-img lazyload" src="./assets/Banner/delhipolice.png" /><noscript><img decoding="async" src="./assets/Banner/delhipolice.png" class="about-hero-img" alt="About Hero"/></noscript></p>
+    <div class="chat-icon">
+        <div class="back-to-top">
+            <span><em></em></span><i class="fa fa-angle-up"></i>
+            <label>Back To Top</label>
+        </div>
+        <div class="hero-scroll"> <span class="chat-notification"></span>
+            <a href="https://wa.me/918657926423" target="_blank" class="hero-scroll-icon"> <i class="fa fa-whatsapp"></i> </a>
+        </div>
+    </div>
+    <div class="footer-usp-list">
+        <div class="footer-usp-item">
+            <img decoding="async" alt="kartavyamtrust Assured" style="width: 48px;  height: 47px;" data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/footer-usp-1.jpg" class="lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/footer-usp-1.jpg" alt="kartavyamtrust Assured" style="width: 48px;  height: 47px;"/></noscript>
+            <span>All our efforts are made possible only because of your support</span>
+            <div class="clear"></div>
+        </div>
+        <div class="footer-usp-item">
+            <img decoding="async" alt="kartavyamtrust Assured" style="width: 48px;  height: 47px;" data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/footer-usp-2.jpg" class="lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/footer-usp-2.jpg" alt="kartavyamtrust Assured" style="width: 48px;  height: 47px;"/></noscript>
+            <span>Your donations are tax exempted under 80G of the Indian Income Tax Act</span>
+            <div class="clear"></div>
+        </div>
+        <div class="footer-usp-item">
+            <img decoding="async" alt="kartavyamtrust Assured" style="width: 48px;  height: 47px;" data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/footer-usp-3.jpg" class="lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/footer-usp-3.jpg" alt="kartavyamtrust Assured" style="width: 48px;  height: 47px;"/></noscript>
+            <span>Your donation transactions are completely safe and secure</span>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <ul class="footer-social">
+            <li><a href="https:/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="httIA" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="htia" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="htt" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="hu" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <div class="footer-top-wrapper">
+            <ul class="footer-main">
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="newskartvyam.html">news</a></li>
+                <li><a href="/downloads/" target="blank">kartavyamtrust Protection Policy</a></li>
+                <li><a href="/get-involved">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom-wrapper">
+
+            <div class="footer-bottom-block">
+                <span class="footer-disclaimer">
+            <span>© 2022 kartavyamtrust All rights reserved.</span>
+                <a href="/-p/" target="_blank">Privacy Policy</a>
+                <a href="/terms-conditions/" target="_blank">Terms &amp; Conditions</a>
+                </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--    <img decoding="async"   alt="Crayon Strip" data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/crayon-strip-footer.png" class="crayon-strip-bottom lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.kartavyamtrust.org/wp-content/themes/kartavyamtrust/images/crayon-strip-footer.png" class="crayon-strip-bottom" alt="Crayon Strip"></noscript>-->
+    </footer>
+    <div class="bg-overlay"></div>
+
+    <!-- Start Go Top Section -->
+    <div class="go-top ">
+        <i class="bx bx-chevron-up "></i>
+        <i class="bx bx-chevron-up "></i>
+    </div>
+    <!-- End Go Top Section -->
+
+    <!-- Jquery Slim JS -->
+    <script src="assets/js/jquery.min.js "></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js "></script>
+    <!-- Easing Min JS -->
+    <script src="assets/js/jquery.easing.min.js "></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js "></script>
+    <!-- Owl Magnific JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js "></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js "></script>
+    <!-- Appear JS -->
+    <script src="assets/js/jquery.appear.js "></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js "></script>
+    <!-- Image Light Box JS -->
+    <script src="assets/js/imagelightbox.min.js "></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js "></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js "></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js "></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js "></script>
+
+    <!-- Slider Revolution core JavaScript files -->
+    <script src="assets/revolution/js/jquery.themepunch.tools.min.js "></script>
+    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js "></script>
+    <script src="assets/js/rev-slider-custom.js "></script>
+    <script>
+        document.onkeydown = function(e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

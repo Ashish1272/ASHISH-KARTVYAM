@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Revolution Slider CSS -->
+    <link rel="stylesheet" href="assets/revolution/css/settings.css">
+    <link rel="stylesheet" href="assets/revolution/css/layers.css">
+    <link rel="stylesheet" href="assets/revolution/css/navigation.css">
+    <link media="all" href="wp-content/cache/autoptimize/css/autoptimize_7ae36b5d23845d2c18c73ff7e7749b12.css" rel="stylesheet" />
+    <link media="screen" href="wp-content/cache/autoptimize/css/autoptimize_8e43d65e358c9983a83d6347aa138fb3.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Owl Magnific CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Image Light Box CSS -->
+    <link rel="stylesheet" href="assets/css/imagelightbox.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- Odometer CSS-->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Dark CSS -->
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/css/familypoorcrawsel.fundpage.css">
+
+    <title>KARTVYAM</title>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #04AA6D;
+            padding: 2px;
+        }
+        
+        rgb (101, 43, 43)rgb(43, 86, 101)rgb(7, 115, 154)rgb(7, 154, 83) .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Create a right-aligned (split) link inside the navigation bar */
+        
+        .topnav a.split {
+            float: right;
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        .topnav a {
+            float: right;
+            margin-right: 20px;
+        }
+    </style>
+
+    <style>
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <style>
+        .zoom {
+            transition: transform .2s;
+            /* Animation */
+        }
+        
+        .zoom:hover {
+            transform: scale(1.1);
+            font-size: 17px;
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
+
+    <style>
+        @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+        @import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
+        h1 {
+            text-align: center;
+        }
+        
+        .as-1 {
+            --col-gap: 1rem;
+            --barH: 1rem;
+            --roleH: 1rem;
+            --flapH: 1rem;
+            width: min(90rem, 100%);
+            margin-inline: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--col-gap);
+            padding-inline: calc(var(--col-gap) / 2);
+            justify-content: center;
+            align-items: flex-start;
+            list-style: none;
+        }
+        
+        .as-1 li {
+            width: 10em;
+            display: grid;
+            grid-template: "role" "icon" "title" "descr";
+            align-items: flex-start;
+            gap: 1rem;
+            padding-block-end: calc(var(--flapH) + 1rem);
+            text-align: center;
+            background: var(--accent-color);
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6) var(--roleH), rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem), rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
+            clip-path: polygon( calc(var(--col-gap) / -2 - 5px) 0, calc(100% + var(--col-gap) / 2 + 5px) 0, calc(100% + var(--col-gap) / 2 + 5px) calc(100% - var(--flapH)), 50% 100%, calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
+        }
+        /* bar */
+        
+        .as-1 li::before {
+            content: "";
+            grid-area: role;
+            height: var(--barH);
+            width: calc(100% + var(--col-gap));
+            margin-left: calc(var(--col-gap) / -2);
+            margin-top: calc(var(--roleH) / 2 - var(--barH) / 2);
+            background: grey;
+            z-index: -1;
+            background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.4));
+        }
+        /* role */
+        
+        .as-1 li::after {
+            content: "";
+            grid-area: role;
+            background: var(--accent-color);
+            background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.4));
+            height: var(--roleH);
+        }
+        
+        .as-1 li .icon,
+        .as-1 li .title,
+        .as-1 li .descr {
+            padding-inline: 1rem;
+            color: white;
+            text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+        }
+        
+        .as-1 li .icon {
+            font-size: 3rem;
+        }
+        
+        .as-1 li .title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        
+        .as-1 li .descr {
+            font-size: 0.9rem;
+        }
+        
+        .credits {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+        }
+        
+        .credits a {
+            color: var(--color);
+        }
+    </style>
+    <style>
+        .banner {
+            width: 100%;
+            height: 320px;
+            background-image: url(./assets/Banner/whocanavail.png);
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+    <style>
+        .whitebutton {
+            margin: 20px auto;
+            padding: 20px 0;
+            width: 200px;
+        }
+        
+        .whitebutton a {
+            background: #fff;
+            color: #666;
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 200px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .whitebutton a:before {
+            content: '\f019';
+            font-family: FontAwesome;
+            font-weight: normal;
+            padding: 5px;
+            margin-left: -12px;
+            margin-right: 6px;
+        }
+        
+        .whitebutton span {
+            background: #100;
+            color: #fff;
+            display: block;
+            font-size: 12px;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 200px;
+            z-index: 1;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .whitebutton .up {
+            background: #078c54;
+            margin: -25px auto;
+            opacity: 0;
+            border-radius: 0 0 5px 5px;
+            transform: translate(0, -50px);
+            transition: 350ms;
+        }
+        
+        .whitebutton .down {
+            margin: -30px auto;
+            opacity: 0;
+            border-radius: 5px 5px 0 0;
+            transform: translate(0, -50px);
+            transition: 350ms;
+        }
+        
+        .whitebutton .down:before {
+            content: '\f14a';
+            font-family: FontAwesome;
+            font-weight: normal;
+            margin-right: 6px;
+            color: #aaa;
+        }
+        
+        .whitebutton:hover .up {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        
+        .whitebutton:hover .down {
+            opacity: 1;
+            transform: translate(0, -90px);
+        }
+        
+        .whitebuttondemo {
+            margin: 20px auto;
+            padding: 20px 0;
+            width: 200px;
+        }
+        
+        .whitebuttondemo a {
+            background: #078c54;
+            color: #fff;
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 200px;
+            position: relative;
+            z-index: 2;
+            transition: 350ms;
+        }
+        
+        .whitebuttondemo a:before {
+            content: '\f004';
+            font-family: FontAwesome;
+            font-weight: normal;
+            padding: 8px;
+            margin-left: -12px;
+            margin-right: 6px;
+        }
+        
+        .whitebuttondemo a:hover {
+            color: #fff;
+        }
+        
+        .whitebuttondemo span {
+            color: rgba(0, 0, 0, 0.712);
+            display: block;
+            font-size: 12px;
+            font-family: 'Arial', Verdana, sans-serif;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 200px;
+            z-index: 1;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .whitebuttondemo .up {
+            margin: -25px auto;
+            opacity: 0;
+            border-radius: 0 0 10px 10px;
+            transform: translate(0, -50px);
+            transition: 350ms;
+        }
+        
+        .whitebuttondemo:hover .up {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    </style>
+</head>
+
+<script type="text/javascript">
+    document.oncontextmenu = new Function("return false");
+</script>
+
+
+<body oncontextmenu="return false" onmousedown="return false" onselectstart="return false">
+
+
+  
+    <!-- Start Navbar Area -->
+    <div class="navbar-area  navbar-style-three" style="border:1px solid white;">
+        <div class="topnav" style="overflow:hidden; ">
+
+
+            <div class="nav-search-wrapper" style="float:right; padding:0px;overflow:hidden;">
+                <input type="search" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </div>
+            <a href="" style="color:rgb(255, 255, 255);"><i class="fa fa-envelope" aria-hidden="true"
+                    style="color:white;"> </i> contact@kartavyamtrust.org</a> &nbsp; &nbsp;
+            <a href="" style="color:rgb(255, 255, 255);"> <i class="fa fa-address-book" aria-hidden="true" style="color:white;"> </i> &nbsp;+91-8750124124</a>
+
+        </div>
+        <div class="huruma-responsive-nav">
+            <div class="container">
+                <div class="huruma-responsive-menu">
+                    <div class="logo" style="margin-top: 20px; padding:20px;">
+                        <a href="index.html">
+                            <img src="./assets/LOGOAS/logoQUW.gif" class="white-logo" alt="logo">
+                            <img src="./assets/LOGOAS/logoQUW.gif" class="black-logo" alt="image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="huruma-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/LOGOAS/logoQUW.gif" class="white-logo" alt="logo">
+                        <img src="./assets/LOGOAS/logoQUW.gif" class="black-logo" alt="image">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">
+                                    About-us
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="history.html" class="nav-link">
+                                            History
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="vision.html" class="nav-link">
+                                            vision
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                            <!-- =----------------mediacenter -->
+                            <li class="nav-item">
+                                <a href="media.html" class="nav-link active">
+                                   Media center
+
+                                </a>
+
+                            </li>
+
+
+                            <!-- =------------------------------------ -->
+                            <li class="nav-item">
+                                <a href="kartvyam.html" class="nav-link">
+                                    Kartavyam?
+                                </a>
+
+                            </li>
+
+                            <!-- =------------------------------------ -->
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    What we do
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="SOCIALWALFAREWOMAN.html" class="nav-link">
+                                            social walfare woman children poverty
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="animal.html" class="nav-link">
+                                            animal walfare
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="nature.html" class="nav-link">
+                                            nature walfare
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            solidarity with pride
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <!-- virtual legal aid -->
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    virtual leagal aid
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href=" objective.html" class="nav-link">
+                                            objectives
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="function-activities.html" class="nav-link">
+                                            function &activities
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="legal-aid-clinic.html" class="nav-link">
+                                            legal aid clinic
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="rulebook.html" class="nav-link">
+                                            rule book
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="membersrule.html" class="nav-link">
+                                            members rule
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="whocan.html" class="nav-link">
+                                            who can avail?
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- virtual legal aid -->
+
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    publications
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="newskartvyam.html" class="nav-link">
+                                            news
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">
+                                            blog
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            research article
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            research report
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li> -->
+                            <!-- -============== -->
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Join-Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="join-us.html" class="nav-link">
+                                            Join-Now
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="membership.html" class="nav-link">
+                                            Membership Program
+                                        </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a href="financialreport.html" class="nav-link">
+                                            finacial Reports
+                                        </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a href="membership.html" class="nav-link">
+                                            corporate parnership
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <!-- virtual legal aid -->
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Start About Area -->
+
+    <div style="height:87px;"></div>
+    <div class="banner">
+
+    </div>
+    <!-- Start About Area -->
+    <section class="tbd-objective-area">
+        <h3 style="margin-top:20px; margin-bottom:30px; text-align: center;  color: rgb(18, 44, 27);"> WHO CAN AVAIL THESE SERVICES AND CRITERIA OF SCRUTINISING? </h3>
+
+        <div class="article-content ">
+
+            <div class="container ">
+                <hr>
+                <p style=" font-family:serif;">
+                    If a person falls in any of the following categories, then he/she can avail of free Virtual Legal Aid at Kartavyam: - Is a person belonging to the Below Poverty Line (BPL) category, or; Is a person having an annual income of Rupees 2,50,000
+                    <br> – or less for lower-income groups; Is a person having annual income of Rs 2,50,000-5,00,000 for middle-income groups; Members of socially and economically deprived sections, who:
+                </p>
+                <br>
+                <p style=" font-family:serif;">
+                    Is a widow; <br> - Is a woman; and whose income falls within the above income bracket (however, cases other than that bracket can be included given the discretionary decision of Kartavyam.) Is a disabled person; Is a lunatic person;
+                    Is a victim of human trafficking, forced labor (beggar), violence, mass disaster, hate crime, environmental disasters; Is a child, i.e., below the age of 18 years,
+                </p>
+                <br>
+
+                <p style=" font-family:serif;">
+                    Is a transgender; Is an ex-serviceman; <br> <br> Anyone who would want to avail of services under the said legal aid cell, shall deposit a minimum fee of Rs 2,500 (administrative charges) on request under name of Kartavyam in form
+                    of Account Transfer and shall submit the necessary documents.
+                </p>
+                <br>
+
+                <p style=" font-family:serif;">
+                    (Please submit documents with respect to proving the same for the criteria stated above, such as ration card, or account statements, or any other books of accounts).
+                </p>
+
+
+                <hr>
+                <hr>
+                <hr>
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+    </section>
+
+    <footer>
+
+        <ul class="footer-social">
+            <li><a href="https:/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="httIA" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="htia" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="htt" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="hu" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <div class="footer-top-wrapper">
+            <ul class="footer-main">
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="newskartvyam.html">news</a></li>
+                <li><a href="/downloads/" target="blank">kartavyamtrust Protection Policy</a></li>
+                <li><a href="/get-involved">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom-wrapper">
+
+            <div class="footer-bottom-block">
+                <span class="footer-disclaimer">
+            <span>© 2022 kartavyamtrust All rights reserved.</span>
+                <a href="/-p/" target="_blank">Privacy Policy</a>
+                <a href="/terms-conditions/" target="_blank">Terms &amp; Conditions</a>
+                </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--    <img decoding="async"   alt="Crayon Strip" data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.cry.org/wp-content/themes/cry/images/crayon-strip-footer.png" class="crayon-strip-bottom lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img decoding="async" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.cry.org/wp-content/themes/cry/images/crayon-strip-footer.png" class="crayon-strip-bottom" alt="Crayon Strip"></noscript>-->
+    </footer>
+    <div class="bg-overlay"></div>
+
+    <!-- Start Go Top Section -->
+    <div class="go-top ">
+        <i class="bx bx-chevron-up "></i>
+        <i class="bx bx-chevron-up "></i>
+    </div>
+    <!-- End Go Top Section -->
+
+    <!-- Jquery Slim JS -->
+    <script src="assets/js/jquery.min.js "></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js "></script>
+    <!-- Easing Min JS -->
+    <script src="assets/js/jquery.easing.min.js "></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js "></script>
+    <!-- Owl Magnific JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js "></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js "></script>
+    <!-- Appear JS -->
+    <script src="assets/js/jquery.appear.js "></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js "></script>
+    <!-- Image Light Box JS -->
+    <script src="assets/js/imagelightbox.min.js "></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js "></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js "></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js "></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js "></script>
+
+    <!-- Slider Revolution core JavaScript files -->
+    <script src="assets/revolution/js/jquery.themepunch.tools.min.js "></script>
+    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js "></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js "></script>
+    <script src="assets/js/rev-slider-custom.js "></script>
+    <script>
+        document.onkeydown = function(e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
